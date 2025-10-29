@@ -1,0 +1,10 @@
+/* Accent border glow on Levi's portrait */
+.hero__portrait {
+  outline: 2px solid rgba(121, 194, 125, .35);
+  outline-offset: 2px;
+}
+
+/* Make the achievements & family cards a touch more compact on wide screens */
+@media (min-width: 1000px) {
+  .grid-2 .card { padding: 1.15rem 1.15rem; }
+}
