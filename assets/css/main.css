@@ -58,11 +58,12 @@ body {
   background: rgba(15, 17, 17, .6);
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
-.site-header__inner {
-  display: flex; align-items: center; gap: 1rem; min-height: 64px;
-  justify-content: space-between;
+
+.brand { display: flex; flex-direction: column; align-items: center; gap: .35rem; text-decoration: none; color: var(--text); }
+.brand img {
+  width: 72px;
+  height: auto;
 }
-.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--text); }
 .brand__text { font-weight: 800; letter-spacing: .3px; }
 
 .site-nav__link {
