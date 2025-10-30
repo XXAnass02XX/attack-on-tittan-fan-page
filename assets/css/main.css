@@ -101,11 +101,37 @@ body {
 .img-bottom-left {
   bottom: 20px;
   left: 100px;
+  animation: slide-in-left 700ms cubic-bezier(.22,.9,.24,1) 120ms both;
+  will-change: transform, opacity;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-60px); /* start slightly off-screen to the left */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .img-bottom-right {
   bottom: 20px;
   right: 100px;
+  animation: slide-in-right 700ms cubic-bezier(.22,.9,.24,1) 250ms both;
+  will-change: transform, opacity;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* 5) Header */
