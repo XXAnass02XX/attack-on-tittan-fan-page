@@ -74,6 +74,24 @@ body {
     justify-content: center;
   }
 }
+/*images in index*/
+.pictures-index img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  position: fixed;
+}
+
+.img-bottom-left {
+  bottom: 20px;
+  left: 100px;
+}
+
+.img-bottom-right {
+  bottom: 20px;
+  right: 100px;
+}
+
 /* 5) Header */
 .site-header {
   position: sticky; top: 0; z-index: 50;
