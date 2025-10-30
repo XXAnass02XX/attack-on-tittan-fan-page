@@ -3,7 +3,13 @@
 *::before,
 *::after { box-sizing: border-box; }
 html, body { height: 100%; }
-body, h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
+h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
+body {
+  min-height: 100svh;                 /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1; }  
 ul[role='list'], ol[role='list'] { list-style: none; margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
 input, button, textarea, select { font: inherit; }
