@@ -88,6 +88,16 @@ body {
   position: fixed;
 }
 
+@media (max-width: 800px) {
+  .pictures-index img {
+    width: calc(
+      120px + (300 - 120) * ((100vw - 400px) / (800 - 400))
+    );
+    height: auto;
+  }
+}
+
+
 .img-bottom-left {
   bottom: 20px;
   left: 100px;
