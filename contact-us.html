@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Attack on Titan Academia • Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="theme--scouts">
+    <header class="site-header">
+        <a class="brand" href="index.html">
+          <img src="assets/img/scouts.png" alt="Scout Regiment emblem" />
+          <p>Attack on titan wiki</p>
+        </a>
+    </header>
+
+    <main class="container content">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a> / Contact Us
+      </nav>
+
+      <h1 class="page-title">Contact Us</h1>
+      <p class="page-subtitle">Have questions, suggestions, or feedback? We'd love to hear from you!</p>
+
+      <div style="max-width: 700px; margin: 2rem auto 0;">
+        <form class="form" action="#" method="post">
+          <div class="form__row">
+            <label class="form__label" for="name">Your Name</label>
+            <input 
+              class="form__control" 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Eren Yeager"
+              required
+            />
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="email">Email Address</label>
+            <input 
+              class="form__control" 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="eren@surveycorps.com"
+              required
+            />
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="subject">Subject</label>
+            <select class="form__control" id="subject" name="subject" required>
+              <option value="">Select a topic...</option>
+              <option value="general">General Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="bug">Report a Bug</option>
+              <option value="content">Content Request</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="message">Your Message</label>
+            <textarea 
+              class="form__control" 
+              id="message" 
+              name="message" 
+              rows="8"
+              placeholder="Tell us what's on your mind..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form__row">
+            <button class="btn btn--primary" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+
+        <section style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.06);">
+          <h2 class="section-title">Other Ways to Connect</h2>
+          <div style="margin-top: 1rem; color: var(--muted); line-height: 1.8;">
+            <p><strong style="color: var(--text);">Response Time:</strong> We typically respond within 24-48 hours.</p>
+            <p style="margin-top: 0.5rem;"><strong style="color: var(--text);">Community Guidelines:</strong> Please be respectful and follow our community standards when reaching out.</p>
+            <p style="margin-top: 0.5rem;"><strong style="color: var(--text);">Note:</strong> This is a fan-made project and is not affiliated with the official Attack on Titan creators or publishers.</p>
+          </div>
+        </section>
+
+        <section style="margin-top: 2rem;">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div style="margin-top: 1rem;">
+            <details style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,.03); border-radius: 12px; border: 1px solid rgba(255,255,255,.08);">
+              <summary style="cursor: pointer; font-weight: 600; color: var(--text);">How can I contribute to this wiki?</summary>
+              <p style="margin-top: 0.75rem; color: var(--muted);">We welcome contributions! Please reach out via the contact form above with your ideas or proposed content additions.</p>
+            </details>
+
+            <details style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,.03); border-radius: 12px; border: 1px solid rgba(255,255,255,.08);">
+              <summary style="cursor: pointer; font-weight: 600; color: var(--text);">Is this site official?</summary>
+              <p style="margin-top: 0.75rem; color: var(--muted);">No, this is a fan-made project created by Attack on Titan enthusiasts. We are not affiliated with Hajime Isayama, Kodansha, or any official publishers.</p>
+            </details>
+
+            <details style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,.03); border-radius: 12px; border: 1px solid rgba(255,255,255,.08);">
+              <summary style="cursor: pointer; font-weight: 600; color: var(--text);">Can I report incorrect information?</summary>
+              <p style="margin-top: 0.75rem; color: var(--muted);">Absolutely! We strive for accuracy. If you spot any errors, please use the contact form above and select "Feedback" as your subject.</p>
+            </details>
+
+            <details style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,.03); border-radius: 12px; border: 1px solid rgba(255,255,255,.08);">
+              <summary style="cursor: pointer; font-weight: 600; color: var(--text);">Will you add more content?</summary>
+              <p style="margin-top: 0.75rem; color: var(--muted);">Yes! We're continuously updating and adding new content. If you have specific requests, let us know through the contact form.</p>
+            </details>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <small>Fan project — not affiliated with the original creators.</small>
+      </div>
+    </footer>
+  </body>
+</html>

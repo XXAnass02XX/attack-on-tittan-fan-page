@@ -51,6 +51,27 @@ body {
   .grid-2 { grid-template-columns: 1fr 1fr; }
 }
 
+.grid-3 {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .grid-3 { 
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-3 { 
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+}
 /* 5) Header */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -138,6 +159,41 @@ body {
 
 .card--raised { box-shadow: var(--shadow-1); }
 .card--accent { border-color: rgba(121,194,125,.45); }
+
+/*choice card at the home page*/
+
+.choice-card {
+  background: linear-gradient(180deg, rgba(255, 251, 0, 0.03), rgba(2, 48, 8, 0.9));
+  border: 1px solid rgba(255,255,255,.08);
+  width: 250px;
+  height: auto;
+  border-radius: var(--radius);
+  padding: 1rem;
+  position: relative;
+  transform-origin: center;
+  transition:
+    transform 180ms cubic-bezier(.2,.7,.2,1),
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+  will-change: transform;
+}
+
+.choice-card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-1);
+  border-color: rgba(121,194,125,.45);
+}
+
+/* keyboard users get a similar effect */
+.choice-card:focus-visible {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(121,194,125,.35), var(--shadow-1);
+}
+@media (min-width: 640px) { .card { padding: 1.25rem; } }
+
+.choice-card--raised { box-shadow: var(--shadow-1); }
+.choice-card--accent { border-color: rgba(121,194,125,.45); }
 
 /* 9) Lists */
 .list { margin-left: 1rem; }
